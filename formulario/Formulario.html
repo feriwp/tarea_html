@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="icon" href="../imagenes/vmix-logo-black.ico">
+</head>
+<body>
+<form action=../formulario/inscripcion.html method="get">
+    <h1>Dejanos tu contacto</h1>
+    <fieldset>
+        <legend>Datos:</legend>
+        <label for="nombre">Nombre: </label>
+        <input id="nombre" name="nombre" type="text" placeholder="David" required minlength="4" maxlength="8"><br><br>
+        <label for="apellidos">Apellidos: </label>
+        <input id="apellidos" name="apellidos" type="text"><br><br>
+        <label for="mail">Email: </label>
+        <input id="mail" name="mail" type="email" required><br><br>
+        <label for="edad">Edad: </label>
+        <input id="edad" name="edad" type="number"></fieldset>
+    <h1>Donde trabajas</h1>
+        <label for="trabajo">Selecciona tu empleo:</label>
+        <select id="trabajo" name="trabajo">
+        <option value="tecnico">Realizador</option>
+        <option value="ingeniero">Jefe Técnico</option>
+        <option value="informatico">Informatico</option>
+        </select>
+    <h1>Elige cual es tu campo de trabajo:</h1>
+        <input id="streaming" name="trabajo" type="radio">
+        <label for="streaming">Streaming</label>
+        <input id="video" name="trabajo" type="radio">
+        <label for="video">Video Profesional</label>
+    <h1>¿Cual es tu duda?</h1>
+        <textarea id="duda" name="duda" rows="10" cols="40" placeholder="Cuentanos" ></textarea> 
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
